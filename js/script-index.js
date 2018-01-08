@@ -13,9 +13,13 @@ $('.js-back').hide();
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
-}
-
+    console.log("recipes:", recipesArray);
+    for(var i in recipesArray){
+        if(recipesArray[i]["highlighted"] === true){
+            renderRecipe();
+        }
+    }
+};
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
 * marcado el atributo "highlighted" como TRUE
@@ -23,6 +27,7 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
+$('.list-recipes');
 	console.log('Voy a pintar la receta:', recipe);
 };
 
