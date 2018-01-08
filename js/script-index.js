@@ -42,7 +42,14 @@ function renderActivities(activitiesArray) {
 */
 function renderActivity(recipe) {
 	
-}
+};
+/*función para imprimir nuevas recetas en la sección news*/
+function printNews(){
+$('#p1').append('NUEVAS RECETAS');
+};
+
+printNews();
+
 
 
 
